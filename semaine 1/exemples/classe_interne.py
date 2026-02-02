@@ -1,10 +1,11 @@
 # exemple de classe interne
+# classe principale
 class Voiture:
     # Variable de classe, variable qui est commune à tous les objets instanciés de cette classe, existe au niveau de la
     # classe
     nombre_de_roues = 4
 
-    def __init__(self, marque, modele):
+    def __init__(self, marque: str, modele):
         # déclaration de variables d'instance (ex: self.marque) et assignation à ce qui est passé en paramètres
         # (ex: marque)
         self.marque = marque

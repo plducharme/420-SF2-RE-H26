@@ -1,4 +1,5 @@
 class Personne:
+    variable_de_classe = "VAR"
 
     # constructeur
     def __init__(self,  nom, prenom):
@@ -6,6 +7,7 @@ class Personne:
         self.__nom = nom
         self.__prenom = prenom
 
+    # Méthode publique
     def afficher(self):
         print(self.__nom + " " + self.__prenom)
 
@@ -28,7 +30,10 @@ class Personne:
 pld = Personne("Ducharme", "Pier Luc")
 pld.afficher()
 # Va retourner une AttributeError car __nom est privé
-print(pld.__nom)
+try:
+    print(pld.__nom)
+except AttributeError as e:
+    print(e)
 # "mangling", le nom de la variable est modifié pour éviter les collisions (à ne pas faire, mais ne donne pas d'erreur)
 print(pld._Personne__nom)
 # accès via l'accesseur
