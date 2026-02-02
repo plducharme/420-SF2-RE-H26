@@ -1,7 +1,7 @@
 # Ceci est un exemple plus complet d'encapsulation et de polymorphisme.
 # On définit une classe Livre qui a trois attributs privés: titre, auteur et prix.
 class Livre(object):
-    def __init__(self, titre, auteur, prix: float):
+    def __init__(self, titre: str, auteur: str, prix: float):
         self.__titre = titre
         self.__auteur = auteur
         self.__prix = self.__valider_prix(prix)
@@ -64,17 +64,17 @@ class Livre(object):
 
 
 # Exemples d'utilisation des méthodes redéfinies
-miserable = Livre("Les Misérables", "Victor Hugo", 14.99)
+miserables = Livre("Les Misérables", "Victor Hugo", 14.99)
 alice = Livre("Alice au pays des merveilles", "Lewis Carroll", 9.99)
 
-if miserable > alice:
+if miserables > alice:
     print("Le premier livre est plus cher que le deuxième")
-elif miserable == alice:
+elif miserables == alice:
     print("Les deux livres ont le même prix")
 else:
     print("Le premier livre est moins cher que le deuxième")
 
-addition_livres = miserable + alice
+addition_livres = miserables + alice
 
 print(addition_livres)
 

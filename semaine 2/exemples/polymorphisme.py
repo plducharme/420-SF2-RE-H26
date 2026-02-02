@@ -6,6 +6,9 @@ class Animal:
     def manger(self, nourriture):
         print(f"Un animal qui mange {nourriture}")
 
+    def crier(self):
+        print("Un animal qui crie!")
+
 
 # Chien hérite de Animal
 # La classe va hériter de tous les attributs (variables et méthodes) de la classe Animal
@@ -31,5 +34,8 @@ chien.manger("de la viande")
 oiseau = Oiseau()
 oiseau.bouger()
 oiseau.manger("des graines")
+
+oiseau.crier()
+chien.crier()
 
 
