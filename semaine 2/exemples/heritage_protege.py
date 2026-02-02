@@ -43,8 +43,13 @@ class TriangleIsocele(Triangle):
         print(f"Je suis un {self._nom} de base {self._base} et de hauteur {self._hauteur}")
 
 
-triangle = TriangleIsocele(3, 4)
-triangle.afficher()
-# mro() est une méthode qui retourne l'ordre de résolution des méthodes
-print(TriangleIsocele.mro())
+print(f"Exécution de cette ligne dans {__name__}")
 
+if __name__ == "__main__":
+    print("Exécution à partir du module principal")
+    triangle = TriangleIsocele(3, 4)
+    triangle.afficher()
+    # mro() est une méthode qui retourne l'ordre de résolution des méthodes
+    print(TriangleIsocele.mro())
+
+    print(__name__)
