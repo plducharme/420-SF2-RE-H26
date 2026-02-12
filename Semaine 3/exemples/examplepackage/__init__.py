@@ -1,2 +1,2 @@
-# emamplepackage __init__.py
+# examplepackage __init__.py
 __all__ = ["jsonutils", "sysutils", "example"]

@@ -20,11 +20,17 @@ class Triangle(Polygone):
     def afficher_nb_cotes(self):
         print('Triangle ' + str(3))
 
+class Hexagone(Polygone):
+
+    def afficher_nb_cotes(self):
+        print(f"Hexagone 6")
+
 
 triangle = Triangle()
 carre = Carre()
+hexagone = Hexagone()
 
-polys = [triangle, carre]
+polys = [triangle, carre, hexagone]
 
 # Code générique, car Triangle et Carre doivent implémenter afficher_nb_cotes(self)
 for poly in polys:

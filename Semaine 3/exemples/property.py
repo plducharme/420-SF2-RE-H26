@@ -3,11 +3,13 @@ class NombrePositif:
     def __init__(self, valeur):
         self.__valeur = valeur
 
+    # Déclare un getter associé à la propriété "valeur"
     @property
     def valeur(self):
         print('méthode getter appelée')
         return self.__valeur
 
+    # Déclare un setter associé à la propriété valeur
     @valeur.setter
     def valeur(self, valeur):
         print('méthode setter appelée')
