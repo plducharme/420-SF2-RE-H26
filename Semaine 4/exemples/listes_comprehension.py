@@ -1,3 +1,4 @@
+# On déclare une expression qui va générer les valeurs suivie de conditions avec for ou if
 cubes = [x**3 for x in range(12)]
 print(cubes)
 # équivalent
