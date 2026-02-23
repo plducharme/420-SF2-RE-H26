@@ -36,7 +36,7 @@ class Noeud:
                 self.__gauche.insertion(noeud)
         # Si le noeud que l'on veut insérer est plus grand que le noeud courant
         else:
-            # Si le fils de gauche n'existe pas, le noeud à inséré devient le fils droit
+            # Si le fils de droite n'existe pas, le noeud à inséré devient le fils de droite
             if self.__droite is None:
                 self.__droite = noeud
             # Si existant, on appelle la méthode insertion() sur le fils de droit
