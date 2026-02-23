@@ -21,5 +21,7 @@ print(instruments)
 instruments.append('cornemuse')
 print(instruments)
 
+print(instruments.pop())
+
 
 
