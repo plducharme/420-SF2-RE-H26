@@ -26,7 +26,7 @@ class ListeSimplementChainee:
             self.tete = nouveau_noeud
             return
 
-        while courant is not None and compteur < index -1:
+        while courant is not None and compteur < index - 1:
             courant = courant.suivant
             compteur += 1
 
@@ -71,11 +71,6 @@ class ListeSimplementChainee:
         noeud.suivant = noeud.suivant.suivant
 
 
-
-
-
-
-
 class Noeud:
 
     def __init__(self, valeur):
@@ -97,8 +92,6 @@ class Noeud:
     @suivant.setter
     def suivant(self, valeur):
         self.__suivant = valeur
-
-
 
 
 if __name__ == "__main__":
@@ -123,4 +116,3 @@ if __name__ == "__main__":
 
     lsc.supprimer(5555)
     print("")
-
