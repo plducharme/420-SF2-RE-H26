@@ -1,5 +1,5 @@
 class ListeSimplementChainee:
-
+    # Le Noeud à la tête de la liste
     def __init__(self):
         self.__tete = None
 
@@ -13,6 +13,7 @@ class ListeSimplementChainee:
 
     def inserer_tete(self, data):
         noeud = Noeud(data)
+        # Si la tête existe, elle devient le suivant de la nouvelle tête
         if self.__tete is not None:
             noeud.suivant = self.tete
         self.__tete = noeud
@@ -38,7 +39,7 @@ class ListeSimplementChainee:
 
     def inserer_fin(self, valeur):
         courant = self.__tete
-
+        # On parcourt la liste jusqu'à ce qu'il n'y ait plus de suivant, puis on l'insère à la fin
         while courant.suivant is not None:
             courant = courant.suivant
 
@@ -46,6 +47,7 @@ class ListeSimplementChainee:
         courant.suivant = nouveau_noeud
 
     def supprimer_debut(self):
+        # On met le suivant en tête, le noeud supprimé sera ramassé par le ramasse-miettes
         tete = self.__tete
         suivant = tete.suivant
         self.__tete = suivant
@@ -53,7 +55,8 @@ class ListeSimplementChainee:
     def supprimer_fin(self):
         noeud = self.__tete
         precedent = None
-
+        # On parcours la liste jusqu'à ce qu'il n'y ait plus de suivant, toujours en gardant une référence vers le
+        # précédent. Puis, on indique que le suivant du précédent est None
         while noeud.suivant is not None:
             precedent = noeud
             noeud = noeud.suivant
