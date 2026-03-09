@@ -35,14 +35,14 @@ print(tableau_zeros)
 tableau_ones = np.ones((3, 4))
 print(tableau_ones)
 
-# Créer un tableau numpy 2D de valeurs aléatoires entre 0 et 1 avec les dimensions 3x4x2
+# Créer un tableau numpy 3D de valeurs aléatoires entre 0 et 1 avec les dimensions 3x4x2
 tableau_random = np.random.rand(3, 4, 2)
 print("Tableau 3D aléatoire")
 print(tableau_random)
 
 # Créer un tableau numpy 1D à partir d'un range
 # Fonction comme le range() de Python (début incl, fin excl, pas) mais retourne un tableau numpy
-tableau_range = np.arange(2, 10)
+tableau_range = np.arange(2.0, 10.5, 1.5)
 print(tableau_range)
 
 # Créer un tableau numpy 1D réparti en 5 valeurs entre 0 et 10
