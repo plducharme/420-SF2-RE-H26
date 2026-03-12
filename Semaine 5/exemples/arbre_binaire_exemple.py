@@ -36,11 +36,17 @@ if __name__ == "__main__":
             liste_elements.append(Element(ligne["Symbol"], int(ligne["AtomicNumber"])))
 
     random.shuffle(liste_elements)
+    print("Éléments à insérer dans l'arbre:")
+    print(liste_elements)
 
+    #
     racine: Noeud = Noeud(liste_elements[0])
 
     for i in range(1, len(liste_elements) - 1):
         racine.insertion(Noeud(liste_elements[i]))
+    print("Arbre binaire créé")
 
+    # Recherche en profondeur pour les retourner dans l'ordre
+    print("Recherche en profondeur")
     racine.recherche_en_profondeur()
 
