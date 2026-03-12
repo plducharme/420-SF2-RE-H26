@@ -55,7 +55,7 @@ class Noeud:
             self.__droite.recherche_en_profondeur()
 
     # Si on recherche une valeur, on regarde si le noeud existe ou si c'est le bon noeud; sinon, on recherche
-    # recursivement en ustilisant le bon noeud fils
+    # récursivement en utilisant le bon noeud fils
     @staticmethod
     def recherche(noeud: Noeud, valeur) -> bool:
         # Si le noeud n'existe pas, la valeur n'est par présente
@@ -70,6 +70,9 @@ class Noeud:
         # Si la valeur de la clé est plus grande, on recherche dans le fils droit
         else:
             return Noeud.recherche(noeud.droite, valeur)
+
+    def __repr__(self):
+        return f"[Noeud valeur {self.valeur}]"
 
 
 # Début du programme

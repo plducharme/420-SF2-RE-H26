@@ -29,3 +29,11 @@ y = dict([(1, 8), (3, 90), (4, 44)])
 # Parcourir les clefs et les valeurs
 for cle, valeur in a.items():
     print(cle, valeur)
+
+# Parcourir les clés
+for cle in a.keys():
+    print(cle)
+
+# Parcours les valeurs seulement
+for valeur in a.values():
+    print(valeur)

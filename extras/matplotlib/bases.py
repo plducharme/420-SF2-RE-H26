@@ -33,7 +33,7 @@ plt.plot(valeurs_y, valeurs_y, "r--", valeurs_y, valeurs_y_carre, "bs", valeurs_
 plt.legend(["y = x", "y = x^2", "y = 3x"])
 plt.title("Courbes de fonctions")
 plt.xlabel("axe des x")
-plt.ylabel("axes des y")
+plt.ylabel("axe des y")
 # changer la limite des axes
-plt.xlim(0, 80)
+plt.xlim(0, 10)
 plt.show()

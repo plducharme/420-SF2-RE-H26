@@ -1,0 +1,1 @@
+print(f"Autre module {__name__}")

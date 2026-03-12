@@ -23,3 +23,7 @@ print('Full Metal Jacket' in cm.parents)
 
 print(cm["La Joconde"])
 
+# Faire attention s'il y a la même clé dans plusieurs dictionnaires
+# Va retourner celui dans le dictionnaire films
+print(cm["Metropolis"])
+
