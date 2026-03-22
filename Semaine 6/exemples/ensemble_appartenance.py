@@ -5,8 +5,11 @@ from time import perf_counter_ns
 elements = [random.randint(0, 1000000) for _ in range(500001)]
 print(f"Longueur de la liste {len(elements)}")
 # l'ensemble va aussi enlever les doublons
+debut = perf_counter_ns()
 ensemble_elements = set(elements)
+total = perf_counter_ns()
 print(f"Longueur de l'ensemble {len(ensemble_elements)}")
+print(f"Temps pour créer l'ensemble {total - debut} nanosecondes")
 
 # on teste si certaines valeurs appartiennent à la liste ou à l'ensemble
 debut = perf_counter_ns()

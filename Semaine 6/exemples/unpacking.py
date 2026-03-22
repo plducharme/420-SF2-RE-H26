@@ -1,3 +1,5 @@
+# *args (ou *entiers dans ce cas-ci) permet de donner un nombre illimité d'arguments
+# Il englobe les arguments dans un tuple
 def somme(*entiers):
     print('Arguments: ' + str(entiers))
     total = 0
@@ -7,7 +9,7 @@ def somme(*entiers):
     return total
 
 
-print(somme(5, 9, 12, 2))
+print(somme(5, 9, 12, 2, 42))
 
 
 def afficher_arguments(**kwargs):

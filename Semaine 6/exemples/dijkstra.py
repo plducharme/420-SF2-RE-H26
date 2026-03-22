@@ -80,11 +80,13 @@ class Graphe:
             self.afficher_chemin(i, precedents)
 
 
-graphe = [[0, 5, 3, 0, 0],
-          [0, 0, 0, 0, 0],
-          [0, 0, 0, 12, 0],
-          [6, 8, 0, 0, 7],
-          [0, 0, 0, 0, 0]]
+graphe = [[0, 0, 5, 0, 0, 0, 0],
+          [0, 0, 0, 0, 9, 8, 0],
+          [0, 6, 0, 7, 0, 0, 0],
+          [0, 0, 0, 0, 5, 0, 0],
+          [0, 0, 0, 0, 0, 0, 4],
+          [0, 0, 0, 0, 0, 0, 6],
+          [0, 0, 0, 0, 0, 0, 0]]
 
 g = Graphe(graphe, 0)
 distance, precedents = g.plus_court_chemin()

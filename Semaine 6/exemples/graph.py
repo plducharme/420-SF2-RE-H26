@@ -12,6 +12,9 @@ graph = [[0, 5, 3, 0, 0],
          [6, 8, 0, 0, 7],
          [0, 0, 0, 0, 0]]
 
+# Afficher la valeur du poids de l'arête du sommet 2 vers 3
+print(graph[2][3])
+
 # graphe représenté par une liste d'adjacence (utilise un dictionnaire)
 # La clé représente le sommet du graphe
 # La valeur associée à la clé est une liste de tuples (identité, poids), où le premier élément du tuple est le sommet
