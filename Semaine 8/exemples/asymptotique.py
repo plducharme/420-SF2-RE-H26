@@ -14,12 +14,12 @@ def lineaire(valeur):
 
 # calcule une valeur quadratique (i.e. y = x^k)
 def quad(valeur):
-    return valeur**2
+    return valeur ** 2
 
 
 # calcule une valeur polynomiale (i.e. y = k^x)
 def poly(valeur):
-    return 2**valeur
+    return 2 ** valeur
 
 
 # calcule une valeur factorielle (i.e. y = x!)
@@ -43,6 +43,7 @@ const = []
 logarithme = []
 
 # appels des fonctions pour le calcul, aurait pu être sous forme de liste en compréhension
+
 for i in range(1, 100):
     nombre.append(i)
     quadra.append(quad(i))
