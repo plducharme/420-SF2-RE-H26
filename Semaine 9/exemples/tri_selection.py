@@ -1,5 +1,5 @@
 import random
-
+from time import perf_counter_ns
 
 def tri_selection(tableau):
 
@@ -18,11 +18,14 @@ def tri_selection(tableau):
                 min_index = j
 
         # On a fini de parcourir le reste du tableau; échanger l'élément à l'index i avec le minimum trouvé
-        print("Échange du minimum trouvé: " + str(minimum) + " avec " + str(tableau[i]) )
+        # print("Échange du minimum trouvé: " + str(minimum) + " avec " + str(tableau[i]) )
         tableau[i], tableau[min_index] = tableau[min_index], tableau[i]
-        print(tableau)
+        # print(tableau)
 
-
+# Cas aléatoire, normalement moyen
 liste = [random.randint(0, 50) for x in range(0, 10)]
 print(liste)
+debut = perf_counter_ns()
 tri_selection(liste)
+print(f"Tri effectué en {perf_counter_ns() - debut} ns")
+

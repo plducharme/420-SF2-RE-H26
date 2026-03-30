@@ -11,7 +11,7 @@ def tri_rapide(tableau, debut, fin):
     tri_rapide(tableau, pivot + 1, fin)
 
 
-def partition(tableau, debut, fin):
+def partition(tableau, debut, fin) -> int:
     print('partion: ' + str(tableau) + ' debut: ' + str(debut) + ' fin: ' + str(fin) + " pivot: " + str(tableau[fin]))
     # On choisit le pivot comme le dernier élément du tableau
     pivot = tableau[fin]
