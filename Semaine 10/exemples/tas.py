@@ -3,10 +3,11 @@ from random import randint
 
 class TasMax:
 
-    def __init__(self, tableau):
+    def __init__(self, tableau: list):
         self.tableau = tableau
         self.creation_tas_max(self.tableau)
 
+    # tamisage vers le bas
     def tasser_max(self, tableau, index):
         max_index = index
         index_fils_gauche = 2 * index + 1

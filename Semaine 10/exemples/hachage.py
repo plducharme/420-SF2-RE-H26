@@ -14,12 +14,13 @@ print(hashlib.md5(str2.encode("utf-8")).hexdigest())
 print(hashlib.md5(str3.encode("utf-8")).hexdigest())
 
 # La fonction built-in hash() de python peut être utilisé sur n'importe quel type
-print(f"hash(): {hash('42 est la réponse')}")
+print(f"hash(): {hash('42 est la réponse!')}")
 
 #############################################################################################
 # Encryption sécure avec SHA256
 # Générer une "sel" (salt) aléatoire pour réduire le risque de collisions
 salt = secrets.token_hex(16)
+print(salt)
 
 # Le mot de passe à encrypter
 mot_de_passe = "mon mot de passe"

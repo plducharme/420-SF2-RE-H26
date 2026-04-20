@@ -35,7 +35,8 @@ class TriTas:
             TriTas.tamisage_max(tableau, taille, maximum)
 
 
-liste = [65, 70, 56, 32, 91, 25, 22, 26, 50, 47]
-print(f'Tableau originale:\t{liste}')
-TriTas.trier(liste)
-print(f'\nRésultat: {liste}')
+if __name__ == "__main__":
+    liste = [65, 70, 56, 32, 91, 25, 22, 26, 50, 47]
+    print(f'Tableau originale:\t{liste}')
+    TriTas.trier(liste)
+    print(f'\nRésultat: {liste}')
