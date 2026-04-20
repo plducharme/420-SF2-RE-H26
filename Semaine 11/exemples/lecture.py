@@ -1,3 +1,4 @@
+# Le mode par défaut est "rt" lecture/texte
 with open('citations.txt', encoding="utf8") as reader:
     # Lire une ligne
     ligne = reader.readline()
@@ -19,6 +20,7 @@ with open('citations.txt', mode="rt") as reader:
 with open('citations.txt', mode="rt") as reader:
     # Lire toutes les lignes et retourne une liste de lignes
     lignes = reader.readlines()
+    print(lignes)
 
 
 with open('citations.txt', mode="rb") as reader:
@@ -31,4 +33,9 @@ with open('citations.txt', mode="rb") as reader:
         print(chunk)
         # Lecture du prochain "chunk"
         chunk = reader.read(grosseur_chunk)
+
+# Lecture du fichier en entier
+with open("citations.txt", mode="rt", encoding="utf8") as lecteur:
+    contenu = lecteur.read()
+    print(contenu)
 

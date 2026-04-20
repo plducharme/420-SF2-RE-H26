@@ -11,7 +11,7 @@ with open('cc.xlarge.png', 'rb') as image_reader:
     # Nom
     nom = image_reader.read(3)
     print(nom)
-    # Caharacter de fin de ligne pour DOS
+    # Caractère de fin de ligne pour DOS
     crlf = image_reader.read(2)
     print(crlf)
     # Character de fin de fichier
