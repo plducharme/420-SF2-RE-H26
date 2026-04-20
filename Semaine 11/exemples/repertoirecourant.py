@@ -14,6 +14,8 @@ for fd in fichiers:
         print(f"Fichier: {fd}")
     elif os.path.isdir(fd):
         print(f"Répertoire: {fd}")
+    else:
+        print(f"Autre type: {fd}")
 
 # change de répertoire
 os.chdir("../")
