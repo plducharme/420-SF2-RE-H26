@@ -1,6 +1,7 @@
 # test_simple_math.py
 import unittest
 from simple_math import SimpleMath
+import simple_math
 
 
 class SimpleMathTestCase(unittest.TestCase):

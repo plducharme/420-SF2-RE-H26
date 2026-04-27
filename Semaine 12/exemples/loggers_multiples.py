@@ -13,7 +13,7 @@ fichier_logger = logging.getLogger("fichier log")
 file_handler = logging.FileHandler("multiple_loggers.log")
 file_handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(message)s"))
 fichier_logger.addHandler(file_handler)
-fichier_logger.setLevel(logging.WARNING)
+fichier_logger.setLevel(logging.INFO)
 
 
 for i in range(5):

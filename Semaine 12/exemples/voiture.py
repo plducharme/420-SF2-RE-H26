@@ -65,3 +65,6 @@ class Voiture:
         self.vitesse = vitesse
         return distance
 
+    def __repr__(self):
+        return f"Marque: {self.marque}, Modèle: {self.modele}, Année: {self.annee}, Kilométrage: {self.kilometrage}"
+

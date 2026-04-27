@@ -14,3 +14,4 @@ print('Objet charge: ' + str(dictionnaire_charge))
 
 if dictionnaire == dictionnaire_charge:
     print('Equivalent')
+    print(dictionnaire_charge["Air"])

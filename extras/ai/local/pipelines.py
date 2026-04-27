@@ -48,11 +48,11 @@ class ExemplesPipeline:
 
 
 if __name__ == "__main__":
-    liste_textes = ["I hate chocolate", "I love chocolate", "I ate chocolate", "The chocolate is black"]
+    # liste_textes = ["I hate chocolate", "I love chocolate", "I ate chocolate", "The chocolate is black"]
+    #
+    # for texte in liste_textes:
+    #     resultats = ExemplesPipeline.classification_sentiment_texte(texte)
+    #     print(f"Texte : {texte}")
+    #     print(f"Résultats : {resultats}")
 
-    for texte in liste_textes:
-        resultats = ExemplesPipeline.classification_sentiment_texte(texte)
-        print(f"Texte : {texte}")
-        print(f"Résultats : {resultats}")
-
-    # ExemplesPipeline.texte_vers_image("Un mouton faisant du surf sur une vague de chocolat")
+    ExemplesPipeline.texte_vers_image("Un mouton faisant du surf sur une vague de chocolat")
