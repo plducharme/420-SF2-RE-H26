@@ -44,6 +44,9 @@ def trier_bulles(liste_a_trier):
             liste_a_trier[i], liste_a_trier[i+1] = liste_a_trier[i+1], liste_a_trier[i]
             deja_trie = False
 
+        if deja_trie:
+            return
+
 
 print("Liste des pays avant le tri:")
 print(liste_pays)
