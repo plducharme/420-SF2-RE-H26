@@ -1,0 +1,11 @@
+{
+  "nom": "Khmor le conquérant",
+  "stats":
+  {
+    "CON": 10,
+    "DEX": 9,
+    "STA": 8,
+    "INT": 6
+  }
+
+}

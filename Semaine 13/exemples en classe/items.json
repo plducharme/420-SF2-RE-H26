@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "uid": 1,
+      "nom": "potion de vie",
+      "valeur": 50,
+      "restauration": 20
+    },
+    {
+      "uid": 2,
+      "nom": "Épée longue",
+      "valeur": 150,
+      "attaque": 10
+    }
+  ]
+
+}
