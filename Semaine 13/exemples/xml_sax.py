@@ -5,7 +5,7 @@ import xml.sax
 # Dans le cas d'un parser SAX, à chaque Element que le parser va trouver, il va appeler:
 # startElement(self, name, attrs) lorsque le tag (balise) XML est rencontré
 # characters(self, content) lorsqu'il y a du contenu dans le tag
-# endElement(self, name) lorsque la fin du tag est rencontré
+# endElement(self, name) lorsque la fin du tag est rencontrée
 class EtudiantsHandler(xml.sax.ContentHandler):
 
     # On doit tenir les valeurs jusqu'à ce que l'on ait amassé toutes les informations nécessaires

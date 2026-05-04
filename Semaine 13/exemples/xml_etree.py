@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 from typing import List
 from etudiant import Etudiant, Cours
 
+
 # Dans le cas du etree, un arbre de "Element" est construit
 #
 # Pour chaque Element, il y a les propriétés
@@ -51,7 +52,9 @@ class EtudiantETParser:
     def handle_cours(cours) -> List[Cours]:
         liste_cours = []
         for enfant in cours:
-            cours_inscrit = Cours(nom=enfant.attrib["nom"], duree_cours=int(enfant.attrib["dureeCours"]), duree_lab=int(enfant.attrib["dureeLab"]), duree_travaux=int(enfant.attrib["dureeTravaux"]))
+            cours_inscrit = Cours(nom=enfant.attrib["nom"], duree_cours=int(enfant.attrib["dureeCours"]),
+                                  duree_lab=int(enfant.attrib["dureeLab"]),
+                                  duree_travaux=int(enfant.attrib["dureeTravaux"]))
             liste_cours.append(cours_inscrit)
         return liste_cours
 
